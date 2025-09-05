@@ -1,0 +1,312 @@
+body {
+  /* Set a modern, easy-to-read font and basic page layout */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7fa; /* Light blue background for calm feel */
+  min-height: 100vh; /* Make sure page fills the screen */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header and footer: blue background, white text, centered */
+.site-header, .site-footer {
+  background-color: #007c91;
+  color: #fff;
+  text-align: center;
+}
+
+/* Header spacing */
+.site-header {
+  padding: 18px 0;
+}
+
+/* Site name: large, fancy font */
+.site-title {
+  font-size: 2em;
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: 'Pacifico', cursive;
+}
+
+/* Footer spacing and font */
+.site-footer {
+  padding: 18px 0 10px 0;
+  font-size: 1em;
+  margin-top: auto;
+}
+
+/* Prevent main sections from shrinking */
+main, .cta-banner, .info-section, .how-section, .benefits-section, .testimonials-section {
+  flex-shrink: 0;
+}
+
+/* CTA banner: tall, eye-catching section with background image and color overlay */
+.cta-banner {
+  background: linear-gradient(rgba(0, 80, 120, 0.8), rgba(0, 180, 180, 0.7)), url('img/cta-bg.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main heading: large and bold for attention */
+.cta-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Short description under heading */
+.cta-description {
+  font-size: 1.2em;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  line-height: 1.5;
+}
+
+/* CTA button: bright, bold, and inviting */
+.cta-button {
+  display: inline-block;
+  background-color: #00b4b4;
+  color: #fff;
+  padding: 16px 36px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s;
+}
+
+/* Button hover effect for interactivity */
+.cta-button:hover {
+  background-color: #007c91;
+}
+
+/* Info section: white box with shadow, below banner */
+.info-section {
+  background-color: #fff;
+  padding: 40px 0;
+  box-shadow: 0 4px 16px rgba(0,124,145,0.08);
+  border-radius: 12px;
+  margin: 32px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Two columns: image and info text */
+.info-columns {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Pet image column */
+.info-image {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+}
+
+/* Pet image styling */
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,124,145,0.10);
+}
+
+/* Info text column */
+.info-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Info section heading */
+.info-text h3 {
+  color: #007c91;
+  margin-top: 0;
+  font-size: 1.5em;
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 1px;
+}
+
+/* Info section paragraph */
+.info-text p {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* How section and testimonials: light blue background, centered */
+.how-section, .testimonials-section {
+  background-color: #e6f7fa;
+  text-align: center;
+}
+
+/* How section spacing */
+.how-section {
+  padding: 32px 0 16px 0;
+}
+
+/* Section titles: blue, fancy font */
+.how-title, .benefits-title, .testimonials-title {
+  color: #007c91;
+  font-family: 'Pacifico', cursive;
+}
+
+/* How section title size */
+.how-title {
+  font-size: 1.4em;
+  margin-bottom: 12px;
+}
+
+/* Steps list in how section */
+.how-steps {
+  list-style: decimal inside;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0;
+  color: #333;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+/* Benefits section: white background, centered */
+.benefits-section {
+  background-color: #fff;
+  padding: 24px 0 8px 0;
+  text-align: center;
+}
+
+/* Benefits and testimonials title size */
+.benefits-title, .testimonials-title {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+/* Benefits list: no bullets, blue text */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+  color: #007c91;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+/* Space between benefits list items */
+.benefits-list li {
+  margin-bottom: 8px;
+}
+
+/* Row for how and benefits: two boxes side by side */
+.how-benefits-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  background-color: #e6f7fa;
+  padding: 32px 0 16px 0;
+  flex-wrap: wrap;
+}
+
+/* How and benefits boxes: white, equal height, shadow */
+.how-benefits-row .how-section,
+.how-benefits-row .benefits-section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,124,145,0.08);
+  padding: 24px 20px 16px 20px;
+  min-width: 260px;
+  max-width: 340px;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
+}
+
+/* Center titles in how/benefits row */
+.how-benefits-row .how-title,
+.how-benefits-row .benefits-title {
+  text-align: center;
+}
+
+/* Remove extra margin in how/benefits row lists */
+.how-benefits-row .how-steps,
+.how-benefits-row .benefits-list {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Remove background and shadow for how/benefits sections outside the row */
+section.how-section:not(.how-benefits-row .how-section),
+section.benefits-section:not(.how-benefits-row .benefits-section) {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Testimonials section spacing */
+/* Testimonials section: white background, rounded edges, shadow */
+.testimonials-section {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,124,145,0.08);
+  padding: 28px 0 16px 0;
+  margin: 32px 16px;
+}
+
+/* Testimonials row: display all testimonials in a row, centered, with space between */
+.testimonials-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 32px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 700px;
+}
+
+/* Testimonial card: perfectly square, blue background, rounded, shadow */
+.testimonial {
+  background: #b2e0ea; /* Deeper blue-teal for better contrast */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,124,145,0.10);
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #00485e; /* Darker text for readability */
+  padding: 16px 12px 10px 12px;
+  box-sizing: border-box;
+}
+
+/* Testimonial pet image: circle, border */
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border: 2px solid #00b4b4;
+}
+
+/* Testimonial name: blue, smaller font */
+.testimonial-name {
+  color: #007c91;
+  font-size: 0.95em;
+}
